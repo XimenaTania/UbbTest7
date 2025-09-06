@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Uniones</title>
+  <link rel="shortcut icon" href="./ImgeIEBLA/header_UBB.png">
+  <link rel="stylesheet" href="./Estilos/globales.css">
+
+  <style>
+
+    /* Encabezado */
+    .hero {
+      background: linear-gradient(rgba(0,85,103,0.7), rgba(0,85,103,0.7)),
+                  url("/ImgeIEBLA/IglesiasS.jpeg") center/cover no-repeat;
+      color: white;
+      text-align: center;
+      padding: 80px 20px;
+    }
+    .hero h1 {
+      font-size: 3em;
+      margin: 0;
+      letter-spacing: 2px;
+    }
+    .hero p {
+      font-size: 1.2em;
+      margin-top: 10px;
+    }
+  
+
+    h2.section-title {
+      text-align: center;
+      font-size: 2em;
+      margin-top: 40px;
+    }
+     h2.section-title::after {
+      content: "";
+      width: 60px;
+      height: 4px;
+      background: #005567;
+      display: block;
+      margin: 10px auto 0;
+      border-radius: 2px;
+    }
+
+    .container2 {
+      max-width: 1200px;
+      margin: 40px auto;
+      padding: 20px;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 30px;
+    }
+
+    .union {
+     background: linear-gradient(145deg, #E0E1DD, #5199AD);
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+      cursor: pointer;
+    }
+
+    .union:hover {
+      transform: translateY(-10px) scale(1.02);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    .union img {
+      width: 100%;
+      height: 200px;
+      object-fit: contain;
+      background: #ffffff;
+      transition: transform 0.4s ease;
+    }
+
+    .union:hover img {
+      transform: scale(1.05);
+    }
+
+    .title {
+      font-size: 1.4em;
+      color: #005567;
+      border-left: 5px solid #69001F;
+      padding-left: 10px;
+      margin: 15px 0 10px;
+      padding: 5%;
+      font-weight: bold;
+    }
+
+    .description {
+      font-size: 1em;
+      color: #000000;
+      padding: 0 20px 20px;
+      text-align: justify;
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 900px) {
+      .container2 {
+        grid-template-columns: 1fr;
+      }
+
+      .title {
+        font-size: 1.1em;
+      }
+
+      .description {
+        font-size: 0.9em;
+      }
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #222;
+      color: #fff;
+      margin-top: 40px;
+    }
+
+    footer a {
+      color: #00bfff;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <header></header>
+  <!-- Encabezado -->
+  <div class="hero">
+    <h1>Uniones</h1>
+    <p>Un recorrido por los momentos que nos definen</p>
+  </div>
+
+ 
+  
+  <div class="container2">
+    <div class="union">
+      <img src="/ImgeIEBLA/Logo ABLP - Pas Jaime Choque.jpg" alt="Unión 3">
+      <div class="title">Union Nacional de Pastores</div>
+      <div class="description">
+        La Unión Nacional de Pastores Bautistas (UNAPAB) es una organización que agrupa a pastores y pastoras bautistas en Bolivia. Su objetivo principal es apoyar y coordinar el trabajo pastoral en las iglesias bautistas del país.
+      </div>
+    </div>
+
+    <div class="union">
+      <img src="/ImgeIEBLA/Group 2236.png" alt="Unión 2">
+      <div class="title">Unión Femenil Misionera Bautista Bolivia</div>
+      <div class="description">
+        La Unión Femenil Misionera Bautista de Bolivia es una organización religiosa que agrupa a mujeres bautistas en Bolivia. Su objetivo principal es promover la educación cristiana misionera y el servicio social entre las mujeres bautistas de todas las edades.
+      </div>
+    </div>
+
+    <div class="union">
+      <img src="/ImgeIEBLA/Group 2235.png" alt="Unión 1">
+      <div class="title">Unión de Jóvenes Bautista de Bolivia</div>
+      <div class="description">
+        La Unión de Jóvenes Bautistas de Bolivia (UJBB) es una organización que agrupa a jóvenes cristianos bautistas en Bolivia. Su objetivo principal es fomentar la fe, el compañerismo y el servicio a la comunidad entre los jóvenes.
+      </div>
+    </div>
+
+    <div class="union">
+      <img src="/ImgeIEBLA/LOGO STB UALP24-3 - Angel Soliz.png" alt="Unión 4">
+      <div class="title">Unión de circuitos evangélico de Bautista de Bolivia</div>
+      <div class="description">
+        La Unión de Circuitos Evangélicos Bautistas de Bolivia es una organización cristiana que agrupa a iglesias y comunidades bautistas en el país, con el propósito de fortalecer la fe, promover la unidad y apoyar el trabajo misionero y social en la sociedad boliviana.
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <a href="https://www.facebook.com/profile.php?id=100064776608413">Facebook</a> |
+    <a href="#">Tel.4583539</a> |
+    <a href="https://www.youtube.com/watch?v=_j9wXnuIpi0&t=173s">Youtube</a>
+    <p>&copy; 2025 Union Bautista Boliviana</p>
+  </footer>
+
+</body>
+<script src="./Funciones/app.js"></script>
+</html>
