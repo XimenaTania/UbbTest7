@@ -1,0 +1,118 @@
+.main-layout {
+      max-width: 1200px;
+      margin: 40px auto;
+      padding: 20px;
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      gap: 40px;
+      align-items: start;
+    }
+
+    /* ==== TITULO ==== */
+    .section-title {
+      text-align: center;
+      font-size: 2.2em;
+      font-weight: bold;
+      color: #005567;
+      margin-bottom: 30px;
+      font-family: 'Poppins', sans-serif;
+      position: relative;
+    }
+
+    .section-title::after {
+      content: "";
+      width: 80px;
+      height: 4px;
+      background: #005567;
+      display: block;
+      margin: 10px auto 0;
+      border-radius: 2px;
+    }
+
+    /* ==== CARTILLAS ==== */
+    .directiva-item {
+      background: #fff;
+      border-left: 6px solid #005567;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      padding: 20px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      transition: transform 0.3s ease, box-shadow 0.3s ease, opacity 0.5s;
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeInUp 0.6s forwards;
+    }
+
+    .directiva-item:nth-child(2) { animation-delay: 0.2s; }
+    .directiva-item:nth-child(3) { animation-delay: 0.4s; }
+    .directiva-item:nth-child(4) { animation-delay: 0.6s; }
+
+  @keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.directiva-item {
+  animation: fadeInUp 0.8s ease forwards;
+}
+
+.side-image {
+  animation: fadeInUp 1s ease forwards;
+}
+
+    .directiva-item:hover {
+      transform: translateY(-5px) scale(1.02);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+    }
+
+    .directiva-info h3 {
+      margin: 0;
+      font-size: 1.3em;
+      font-weight: 600;
+      font-family: 'Poppins', sans-serif;
+      color: #0D1B2A;
+    }
+
+    .cargo {
+      margin: 5px 0;
+      font-weight: bold;
+      color: #005567;
+    }
+
+    .contacto {
+      margin: 0;
+      color: #666;
+      font-size: 0.95em;
+    }
+
+    /* ==== FOTO LATERAL ==== */
+    .side-image 
+    {
+     
+      width: 100%;
+      border-radius: 15px;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+      object-fit: cover;
+      transition: transform 0.4s ease;
+    }
+
+    .side-image:hover {
+      transform: scale(1.02);
+    }
+
+    /* ==== RESPONSIVE ==== */
+    @media (max-width: 900px) {
+      .main-layout {
+        grid-template-columns: 1fr;
+      }
+
+      .side-image {
+        margin-top: 20px;
+      }
+    }

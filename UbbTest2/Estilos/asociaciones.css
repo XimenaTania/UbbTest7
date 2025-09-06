@@ -1,0 +1,71 @@
+
+
+.boxA img {
+  width: 20%;
+  height: 85%;
+  object-fit: cover;
+}
+
+/* POPUP sobre la caja */
+.popup {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(121, 34, 34, 0.9); /* color oscuro con transparencia */
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  text-align: left;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.popup strong {
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+.popup ul {
+  padding-left: 18px;
+  margin: 0;
+}
+
+.popup li {
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+/* Efecto hover */
+.boxA:hover .popup {
+  opacity: 1;
+}
+.containerAso {
+  display: flex;
+  flex-wrap: wrap;          /* Permite que salten a la siguiente fila */
+  justify-content: center;  /* Centra las cajas horizontalmente */
+  gap: 20px;                 /* Espacio entre las cajas */
+  max-width: 1200px;         /* Para que no se estire demasiado */
+  margin: auto;              /* Centrar en la página */
+}
+
+.boxA {
+  flex: 1 1 calc(20% - 20px); /* 20% de ancho menos el gap → 5 por fila */
+  max-width: 240px;           /* Máximo ancho por caja */
+  min-width: 270px;           /* Mínimo ancho antes de romper */
+  height: 250px;
+  text-align: center;
+  font-weight: bold;          /* Negrilla */
+  background-color: yellow;   /* Resaltado */
+  color: #005567 ;                /* Color del texto */
+  border-radius: 10px;
+  background: linear-gradient(145deg, #E0E1DD, #5199AD);
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  position: relative;
+  font-size: 15px
+}

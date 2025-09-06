@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Socios</title>
+    <link rel="shortcut icon" href="./ImgeIEBLA/header_UBB.png">
+    <link rel="stylesheet" href="./Estilos/globales.css">
+
+
+  <style>
+    body {
+  
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    .container3 {
+      max-width: 1000px;
+      width: 90%;
+      margin: 40px auto;
+      padding: 20px;
+    }
+
+    h2.section-title {
+      text-align: center;
+      font-size: 2em;
+  
+      margin-bottom: 30px;
+      position: relative;
+    }
+    h2.section-title::after {
+      content: "";
+      width: 60px;
+      height: 4px;
+      background: #005567;
+      display: block;
+      margin: 10px auto 0;
+      border-radius: 2px;
+    }
+
+    .section {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      background: linear-gradient(145deg, #E0E1DD, #5199AD);
+      margin-bottom: 25px;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .section:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 18px rgba(0,0,0,0.15);
+    }
+
+    .section img {
+      max-width: 250px;
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+
+    .content {
+      flex: 1;
+      padding: 20px;
+    }
+
+    .title {
+      font-size: 1.6em;
+      margin-bottom: 12px;
+      color: #69001F;
+    }
+
+    .summary {
+      font-size: 1em;
+      margin-bottom: 15px;
+      line-height: 1.6;
+    }
+
+    .link {
+      display: inline-block;
+      font-size: 1em;
+      color: #fff;
+      background: #005567;
+      padding: 8px 15px;
+      border-radius: 20px;
+      text-decoration: none;
+      transition: background 0.3s;
+    }
+    .link:hover {
+      background: #69001F;
+    }
+
+ 
+    footer.footer a:hover {
+      color: #fff;
+    }
+
+    footer.footer p {
+      margin-top: 10px;
+      font-size: 0.9em;
+    }
+
+    @media (max-width: 768px) {
+      .section {
+        flex-direction: column;
+      }
+      .section img {
+        max-width: 100%;
+      }
+      .title {
+        font-size: 1.3em;
+      }
+    }
+  </style>
+</head>
+
+
+<body>
+     <header></header>
+  <div class="container3">
+    <h2 id="info" class="section-title">Socios</h2>
+
+    <div class="section">
+      <img src="/ImgeIEBLA/misionn.jpg" alt="CBM">
+      <div class="content">
+         <h3 style="text-align: center;">CBM (Misión Bautista Canadiense)</h3>
+        <div class="summary">
+          <p>Ministerios Bautistas Canadienses es un movimiento de iglesias que se llaman a sí mismos bautistas canadienses. Somos el nexo entre las iglesias a través de Canadá y alrededor del mundo...</p>
+        </div>
+        <a href="https://cbminespanol.wordpress.com/acerca-de-cbm/" class="link">Página web de CBM</a>
+      </div>
+    </div>
+
+    <div class="section">
+      <img src="/ImgeIEBLA/Descarga3.png" alt="EBM">
+      <div class="content">
+        <h3 style="text-align: center;">EBM Internacional (Misión Bautista Europea)</h3>
+        <div class="summary">
+          <p>EBM funciona bajo un modelo colaborativo, donde las uniones bautistas miembro se comprometen con la visión y misión de la organización y colaboran en proyectos conjuntos. Está presente en cuatro continentes...</p>
+        </div>
+        <a href="https://www.ebm-international.org/en/" class="link">Página web de EBM</a>
+      </div>
+    </div>
+  </div>
+
+ 
+</body>
+
+<script src="./Funciones/app.js"></script>
+
+</html>

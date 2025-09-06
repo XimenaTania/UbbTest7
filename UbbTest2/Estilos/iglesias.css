@@ -1,0 +1,45 @@
+.contenedor2 {
+    font-family: 'Roboto', sans-serif;
+}
+.cuadro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    margin: 20px;
+    flex-wrap: wrap;
+}
+.texto {
+    font-size: 2em;
+    font-weight: bold;
+    margin-right: 20px;
+    text-align: center;
+    color: #69001F;
+}
+.texto1 {
+    font-size: 2em;
+    font-weight: bold;
+    margin-right: 20px;
+    text-align: center;
+    color: #005567;
+}
+.imagen {
+    display: flex;
+    flex-direction: row;
+}
+.imagen img {
+    width: 150px;
+    height: auto;
+}
+@media (max-width: 600px) {
+    .cuadro {
+        flex-direction: column;
+    }
+    .imagen {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+    .imagen img {
+        margin-top: 10px;
+    }
+}

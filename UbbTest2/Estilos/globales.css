@@ -1,0 +1,91 @@
+@import url("./encabezado.css");
+@import url("./banner.css");
+@import url("./fotos-carrusel.css");
+@import url("./Directorio1.css");
+@import url("./Directorio2.css");
+@import url("./Instituciones.css");
+@import url("./pie-de-pagina.css");
+@import url("./contacto.css");
+@import url("./mision.css");
+@import url("./fil.css");
+@import url("./iglesias.css");
+@import url("./comiteEje.css");
+@import url("./asociaciones.css");
+@import url("./galeria.css");
+@import url("./ListaIgle.css");
+
+
+/* Estilos Globales*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+   
+    background-size: 100vw;
+    background-attachment: fixed;
+     /* Fondo con imagen */
+    background-image: url("/ImgeIEBLA/Sin\ título-3\ \(1\).png");
+    background-size: cover;      /* Ajusta la imagen al tamaño de la pantalla */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat;/* Evita que se repita */
+    background-attachment: fixed;/* Hace que la imagen quede estática al hacer scroll */
+
+    /* fallback para móviles (algunos navegadores no soportan fixed bien en mobile) */
+    min-height: 100vh;
+
+    
+}
+
+
+ul {
+    list-style: none;
+}
+
+a {
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+section {
+    padding: 10px 50px;
+}
+
+h1{
+    font-size: 50px;
+    font-weight: 700;
+   
+}
+
+h2{
+    font-size: 25px;
+}
+
+/* Estilos utiles */
+
+.section-title {
+    text-align: center;
+}
+
+.reverse-flexrow {
+    flex-direction: row-reverse;
+}
+
+
+@media (max-width: 700px) { 
+    body{
+        text-align: center;
+        background-size: cover;
+    }
+
+    h1{
+        font-size: 2em;
+    }
+    section{
+        padding: 5px 10px;
+    }
+}

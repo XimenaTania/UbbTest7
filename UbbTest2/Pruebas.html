@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Estilos/globales.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="./ImgeIEBLA/header_UBB.png">
+    <link rel="stylesheet" href="./Estilos/globales.css">
+     <title>Historia</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: #f4f4f9;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    /* Encabezado */
+    .hero {
+      background: linear-gradient(rgba(0,85,103,0.7), rgba(0,85,103,0.7)),
+                  url("ImgeIEBLA/CENA_DEL.jpg") center/cover no-repeat;
+      color: white;
+      text-align: center;
+      padding: 80px 20px;
+    }
+    .hero h1 {
+      font-size: 3em;
+      margin: 0;
+      letter-spacing: 2px;
+    }
+    .hero p {
+      font-size: 1.2em;
+      margin-top: 10px;
+    }
+
+    /* Sección principal */
+    .historia {
+      max-width: 1100px;
+      margin: 50px auto;
+      padding: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 40px;
+    }
+    .historia img {
+      flex: 1 1 400px;
+      max-width: 100%;
+      border-radius: 15px;
+      box-shadow: 0 6px 14px rgba(0,0,0,0.2);
+    }
+    .historia .textoHisto {
+      flex: 1 1 400px;
+    }
+    .historia .textoHisto h2 {
+      color: #005567;
+      margin-bottom: 15px;
+      font-size: 2em;
+    }
+    .historia .textoHisto p {
+      margin-bottom: 10px;
+      color: #444;
+    }
+
+    /* Línea de tiempo */
+    .timeline {
+      max-width: 900px;
+      margin: 60px auto;
+      position: relative;
+      padding: 20px;
+    }
+    .timeline::before {
+      content: '';
+      position: absolute;
+      left: 50%;
+      top: 0;
+      bottom: 0;
+      width: 4px;
+      background: #005567;
+      transform: translateX(-50%);
+    }
+    .evento {
+      position: relative;
+      width: 45%;
+      padding: 20px;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 6px 14px rgba(0,0,0,0.1);
+      margin: 20px 0;
+      transition: transform 0.3s ease;
+    }
+    .evento:hover {
+      transform: translateY(-5px);
+    }
+    .evento h3 {
+      margin-top: 0;
+      color: #005567;
+    }
+    .evento p {
+      color: #555;
+    }
+    .evento.izq {
+      left: 0;
+    }
+    .evento.der {
+      left: 55%;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .historia {
+        flex-direction: column;
+        text-align: center;
+      }
+      .timeline::before {
+        left: 10px;
+      }
+      .evento {
+        width: 100%;
+        left: 0 !important;
+        margin-left: 30px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header></header>
+
+  <!-- Encabezado -->
+  <div class="hero">
+    <h1>Nuestra Historia</h1>
+    <p>Un recorrido por los momentos que nos definen</p>
+  </div>
+
+  <!-- Sección introductoria -->
+  <section class="historia">
+    <div class="textoHisto">
+      <h2>De dónde venimos</h2>
+      <p>En 1895, Archivald Reekie, estudiante de teología de la universidad MC Master de Canadá, leyó un libro que le impresiona profundamente: “El continente olvidado”, que trataba sobre la situación religiosa de América Latina. Reekie sintió el llamado de Dios para venir a Bolivia. La visitó por primera vez en 1896 y volvió a establecer la obra en 1898, auspiciado por la misión Bautista Canadiense. </p>
+      <p>El pastor Archibald Reekie llegó a Bolivia el 20 de abril de 1898, empezó su trabajo en la ciudad de Oruro. Hubo muchas resistencia y persecución al evangelio por lo que empezó dando clases de inglés y poco a poco presentó el evangelio. En junio de 1898 realizó la primera Escuela Dominical y en mayo de 1899, el primer culto de predicación. A fines de 1898 llegaron otros misioneros para ayudar en la obra, el pastor Roberto Routledge y su esposa, quiénes fueron a La Paz. En 1900 llegaron los esposos Backer, que después de permanecer un año en Oruro, fueron destinados a La Paz. En 1901 llego a Bolivia la familia del Rev. Carlos Mitchell Qué fue destinado a Cochabamba. El Dr. Baker, además de predicar, daba conferencias sobre la separación de iglesia y Estado y la libertad de cultos. Esto influyó mucho para el cambio del artículo referente a la libertad de cultos en la Constitución Política del Estado (1906). El año 1906 se inició el Colegio Inglés que luego recibiría el nombre del pionero. </p>
+    
+    <p>A principios del siglo XX, se organizaron las siguientes Iglesias: Oruro, con cuatro miembros el 20 de abril de 1902; La Paz con cinco miembros el 29 de junio de 1904; Cochabamba con ocho miembros el 21 de mayo de 1905. </p>
+     <p>Se impulsó la obra de la literatura, publicándose los siguientes periódicos y tratados: Senda de Luz, Amigo de la Verdad, Palabras Oportunas, El Embajador y Redención. Más tarde apareció El Centinela Boliviano. </p>
+      <p> 
+
+Luego de una asamblea preliminar en 1935, en 1936 se realizó la primera Convención donde se aprobó la Constitución de la Unión Bautista Boliviana. El primer presidente fue el pastor Donato Saldías y la primera secretaria, la Hna. Emma Mercado. Se determinó empezar una obra misionera nacional. Se decidió sostener la obra del distrito de Llallagua y se nombró al hermano Macedonio Montaño como pastor misionero para asumir esta responsabilidad. </p>
+       <p> 
+
+En 1936 se fundó el Instituto Bíblico. El 1º de octubre de 1941 se abrió el Colegio Bíblico en la ciudad de Cochabamba, que posteriormente llegó hacer el Seminario Teológico Bautista. En esta década, las iglesias urbanas se extendieron rápidamente, abriendo nuevas misiones en los diferentes barrios, coma también en el valle de Cochabamba y en Chapare. </p>
+    
+ <p>La creación de la Radio Cruz del Sur el 15 de diciembre de 1949 fue hecha realidad gracias a la visión del misionero Dr. Herbert S. Hillyer. 
+
+ 
+
+En realidad, la primera reforma agraria en Bolivia se llevó a cabo en 1942, cuando la Misión Bautista Canadiense, después de educar a los colonos en Huatajata, les entregó sus títulos de propiedad de parcelas de tierra, demostrando en esta forma obediencia a los postulados de la Biblia. </p>
+  <p>En enero de 1948 se organizó el Colegio Bíblico de Huatajata. </p>
+   <p>El 8 de agosto de 1949 marca un hito en la historia de la Unión Bautista Boliviana, pues en aquella fecha, en la localidad de Melk’aymaya, cerca de Uncía, fueron martirizados ocho hermanos bautistas en plena actividad de evangelización. En esa oportunidad, la sangre de misioneros, pastores nacionales, hermanos laicos, tanto de la ciudad como del campo, niños, jóvenes y adultos, fue derramada en aras del Evangelio de Salvación. </p>
+  <p>Después de estos acontecimientos, la obra empezó a extenderse rápidamente, aunque no en el lugar mismo de los sucesos, Tarija fue el primer punto en el Sur del país que fue iniciado por el llamado que Dios hizo al pastor Juan Aguilar. Luego se avanzó a Villazón, Tupiza, Telamayu, Potosí y más tarde a Sucre. Se proclamó el evangelio en el oriente, en la ciudad de Santa Cruz, la Bélgica, Yapacaní, Montero, Puesto Fernández y otros puntos de la región que poco a poco se han convertido en congregaciones e iglesias. También se abrieron obras misioneras en el extremo sur del país: Bermejo y Yacuiba, y últimamente en Trinidad Beni y Cobija Pando. </p>
+   <p> 
+
+Actualmente la Unión Bautista Boliviana tiene un amplio ministerio, no sólo por medio de sus iglesias, sino también por medio de diferentes instituciones educativas, la Radio Cruz del Sur, el Seminario Teológico Bautista y sus Unidades Académicas, además de programas y proyectos de obra social agrupados en la Organización No Gubernamental (ONG) Bautista de Desarrollo Social (OBADES), creada en fecha 16 de enero de 2002. </p>
+  <p>La Unión Bautista Boliviana (U.B.B.) a nivel nacional está conformada por diversas entidades, incluyendo la Junta Directiva, el Consejo de Doctrina Ética (CODE), Consejo de Gestión y Control (CGC), la Asociación Civil (AC), la Corporación Misionera Evangélica Bautista (COMEBA) y varias uniones y asociaciones regionales, como la Unión Femenil Misionera Bautista Boliviana (UFMBB), la Unión Nacional de Pastores (UNP), la Unión de Jóvenes Bautistas de Bolivia (UJBB), la Unión de Circuitos Evangélicos Bautistas (UCEBB), y la Asociación de Aymaras Bautistas Iglesianacan Mayacht’awipa (ABIM). </p>
+    <p>Las asociaciones regionales en La Paz, Oruro, Cochabamba, Tarija, Potosí, Chuquisaca, Oriente, Norte Potosí, Gran Chaco y Trópico desempeñan un papel crucial en la obra de evangelización, educación cristiana y servicio social. La U.B.B. cuenta con alrededor de 315 iglesias a nivel nacional, cada una con sus respectivas congregaciones. Su misión fundamental es evangelizar, enseñar y servir, contribuyendo así a la expansión del reino de Dios a nivel local, nacional e internacional o transcultural. </p>
+
+
+
+
+</div>
+    <img src="/ImgeIEBLA/social.jpeg" alt="Nuestra historia">
+  </section>
+
+  <!-- Línea de tiempo -->
+  <section class="timeline">
+    <div class="evento izq">
+      <h3>2010</h3>
+      <p>Nace nuestra idea con un pequeño grupo de soñadores.</p>
+    </div>
+    <div class="evento der">
+      <h3>2015</h3>
+      <p>Crecemos y consolidamos nuestro equipo.</p>
+    </div>
+    <div class="evento izq">
+      <h3>2020</h3>
+      <p>Llegamos a nuevas metas y expandimos nuestra visión.</p>
+    </div>
+    <div class="evento der">
+      <h3>2025</h3>
+      <p>Hoy seguimos innovando, mirando hacia el futuro con esperanza.</p>
+    </div>
+  </section>
+
+</body>
+<script src="./Funciones/app.js"></script>
+ <footer class="footer">
+    <a href="https://www.facebook.com/profile.php?id=100064776608413">Facebook</a> |
+    <a href="#">Tel. 4583539</a> |
+    <a href="https://www.youtube.com/watch?v=_j9wXnuIpi0&t=173s">Youtube</a>
+    <p>&copy; 2025 Unión Bautista Boliviana</p>
+  </footer>
+</html>

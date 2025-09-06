@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería de Manuales</title>
+    <link rel="shortcut icon" href="./ImgeIEBLA/header_UBB.png">
+    <link rel="stylesheet" href="./Estilos/globales.css">
+   
+ <style>
+        
+
+    
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .item {
+            background: linear-gradient(145deg, #E0E1DD, #5199AD);
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+            display: flex;
+            flex-direction: column;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.12);
+        }
+
+        .item img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+
+        .title {
+            font-size: 16px;
+            font-weight: bold;
+            padding: 15px;
+            flex: 1;
+            color: #005567;
+            text-align: center;
+        }
+
+        .button2 {
+            display: block;
+            color: #fff;
+            background: #005567;
+            padding: 12px;
+            text-align: center;
+            text-decoration: none;
+            font-weight: bold;
+            border-top: 1px solid rgba(255,255,255,0.2);
+            transition: background 0.3s ease;
+        }
+
+        .button2:hover {
+            background: #69001F;
+        }
+
+    </style>
+</head>
+
+<body>
+    <header></header>
+    <h2 id="info" class="section-title"> Manuales y reglamentos </h2>
+    <div class="container">
+        
+    <div class="container">
+        <div class="item">
+            <img src="/ImgeIEBLA/header_UBB.png" alt="Imagen 1">
+            <div class="title">Reglamento UBB</div>
+            <a href="/ImgeIEBLA/REGLAMENTO DE LA UBB LIMPIO 2024 2.pdf" class="button2" download>📄 Descargar</a>
+        </div>
+
+        <div class="item">
+            <img src="/ImgeIEBLA/header_UBB.png" alt="Imagen 2">
+            <div class="title">Plan Quinquenal</div>
+            <a href="/ImgeIEBLA/UBB Plan Quinquenal_Version Final.pdf" class="button2" download>📄 Descargar</a>
+        </div>
+
+        <div class="item">
+            <img src="/ImgeIEBLA/header_UBB.png" alt="Imagen 3">
+            <div class="title">Reglamento CODE</div>
+            <a href="/ImgeIEBLA/REGLAMENTO DE CODE UBB..pdf" class="button2" download>📄 Descargar</a>
+        </div>
+
+        <div class="item">
+            <img src="/ImgeIEBLA/header_UBB.png" alt="Imagen 4">
+            <div class="title">Reglamento CGC</div>
+            <a href="/ImgeIEBLA/Reglamento CGC aprobado 2024.pdf" class="button2" download>📄 Descargar</a>
+        </div>
+
+        <div class="item">
+            <img src="/ImgeIEBLA/header_UBB.png" alt="Imagen 5">
+            <div class="title">Manual Bautista</div>
+            <a href="/ImgeIEBLA/MANUAL BAUTISTA FINAL.pdf" class="button2" download>📄 Descargar</a>
+        </div>
+
+        <div class="item">
+            <img src="/ImgeIEBLA/header_UBB.png" alt="Imagen 6">
+            <div class="title">Reglamento UNP </div>
+            <a href="/ImgeIEBLA/Reglamento UNP aprobado en 06 de abril 2022.pdf " class="button2" download>📄 Descargar</a>
+        </div>
+
+        <div class="item">
+            <img src="/ImgeIEBLA/header_UBB.png" alt="Imagen 7">
+            <div class="title">Estatuto de la UBB</div>
+            <a href="/ImgeIEBLA/ESTATUTO DE LA UBB  EN  LIMPIO 2024 2.pdf" class="button2" download>📄 Descargar</a>
+        </div>
+    </div>
+
+
+</body>
+<script src="./Funciones/app.js"></script>
+
+</html>

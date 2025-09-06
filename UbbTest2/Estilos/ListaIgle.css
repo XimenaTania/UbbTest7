@@ -1,0 +1,122 @@
+ 
+
+
+    /* Contenedor buscador */
+    .search-container {
+      display: flex;
+      gap: 8px;
+      margin-bottom: 15px;
+      flex-wrap: wrap;
+      padding: 20px;
+    }
+
+    #searchInput {
+      flex: 1;
+      min-width: 200px;
+      padding: 10px;
+      border: 2px solid #005567;
+      border-radius: 8px;
+      font-size: 16px;
+      outline: none;
+      transition: 0.3s;
+    }
+    #searchInput:focus {
+      border-color: #2c6ecb;
+      box-shadow: 0 0 8px rgba(74,144,226,0.5);
+    }
+
+    #searchBtn {
+      padding: 10px 16px;
+      border: none;
+      background: #005567;
+      color: white;
+      font-size: 16px;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: 0.3s;
+      display: none; /* Oculto por defecto */
+    }
+    #searchBtn:hover {
+      background: #69001F;
+    }
+
+    /* Tabla */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background: white;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      animation: fadeIn 1s ease;
+    }
+
+    th, td {
+      padding: 12px 100px;
+      text-align: left;
+    }
+
+    th {
+      background-color: #005567;
+      color: white;
+    }
+
+    tr {
+      transition: background 0.3s ease, transform 0.3s ease;
+    }
+    tr:nth-child(even) {
+      background-color: #f9f9f9;
+    }
+    tr:hover {
+      background-color: #dceeff;
+      transform: scale(1.01);
+    }
+
+    /* Mensaje vacío */
+    #noResult {
+      display: none;
+      text-align: center;
+      margin-top: 15px;
+      font-size: 18px;
+      color: #69001F;
+      font-weight: bold;
+    }
+
+    /* Responsivo: tabla -> tarjetas */
+    @media (max-width: 768px) {
+      table, thead, tbody, th, td, tr {
+        display: block;
+      }
+      thead tr {
+        display: none;
+      }
+      tr {
+        background: white;
+        margin-bottom: 12px;
+        border-radius: 8px;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+        padding: 12px;
+      }
+      td {
+        border: none;
+        padding: 8px 0;
+      }
+      td::before {
+        content: attr(data-label);
+        font-weight: bold;
+        color: #005567;
+        display: block;
+        margin-bottom: 4px;
+      }
+      /* Mostrar botón solo en móvil */
+      #searchBtn {
+        display: block;
+        width: 100%;
+      }
+    }
+
+    /* Animación */
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }

@@ -1,0 +1,193 @@
+/* General */
+header {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Barra superior */
+.botonInicio {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(135deg, #0D1B2A, #1B263B);
+  padding: 12px 24px;
+  color: white;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+  border-bottom: 2px solid rgba(255,255,255,0.2);
+}
+
+/* Header escritorio */
+.header-escritorio {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(135deg, #5199AD, #005567);
+  padding: 14px 24px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  border-radius: 0 0 16px 16px;
+  transition: background 0.4s ease;
+}
+.header-escritorio:hover {
+  background: linear-gradient(135deg, #005567, #5199AD);
+}
+
+/* Logo */
+.header-logo {
+  width: 160px;
+  height: auto;
+  filter: drop-shadow(0 2px 3px rgba(0,0,0,0.3));
+  transition: transform 0.3s ease;
+}
+.header-logo:hover {
+  transform: scale(1.05);
+}
+
+/* Menú principal */
+.header-nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.header-nav ul li {
+  position: relative;
+}
+.header-nav ul li a {
+  color: #E0E1DD;
+  text-decoration: none;
+  padding: 12px 20px;
+  display: block;
+  border-radius: 10px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
+}
+.header-nav ul li a:hover {
+  background: rgba(233, 156, 156, 0.15);
+  color: #69001F;
+  transform: translateY(-2px) scale(1.05);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+}
+
+/* Dropdown */
+.header-nav .dropdown-content {
+  display: none;
+  position: absolute;
+  left: 0;
+  background: linear-gradient(135deg, #1B263B, #0D1B2A);
+  border-radius: 12px;
+  min-width: 220px;
+  box-shadow: 0px 8px 20px rgba(0,0,0,0.2);
+  z-index: 10;
+  overflow: hidden;
+  animation: fadeIn 0.3s ease forwards;
+}
+.header-nav .dropdown-content a {
+  padding: 12px 18px;
+  text-decoration: none;
+  display: block;
+  color: #E0E1DD;
+  transition: background-color 0.3s ease, padding-left 0.3s ease;
+}
+.header-nav .dropdown-content a:hover {
+  background-color: rgba(255, 215, 0, 0.2);
+  padding-left: 24px;
+}
+.header-nav ul li:hover .dropdown-content {
+  display: block;
+}
+
+/* Animación */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/*aqui*/
+/* Ocultar hamburguesa en escritorio */
+.menu-hamburguesa {
+  display: none;
+}
+
+/* --------- SOLO MOVIL --------- */
+@media screen and (max-width: 808px) {
+  .menu-hamburguesa {
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    cursor: pointer;
+    padding: 10px;
+    background: #69001F;
+    border-radius: 10%;
+    box-shadow: 0 4px 10px rgba(207, 173, 173, 0.25);
+    z-index: 1100;
+  }
+  .menu-hamburguesa div {
+    width: 28px;
+    height: 3px;
+    background-color: #005567;
+    margin: 4px 0;
+    border-radius: 3px;
+    transition: all 0.4s ease;
+  }
+
+  /* Menú lateral oculto */
+  .header-nav {
+    position: fixed;
+    top: 0;
+    right: -260px;
+    height: 100vh;
+    width: 260px;
+    background: linear-gradient(135deg, #1B263B, #005567);
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding-top: 70px;
+    transition: right 0.4s ease;
+    z-index: 1000;
+    border-radius: 10%;
+  }
+
+  /* Menú abierto */
+  .header-nav.open {
+    right: 0;
+  }
+
+  /* Animación hamburguesa ↔ X */
+  .menu-hamburguesa.active div:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+  .menu-hamburguesa.active div:nth-child(2) {
+    opacity: 0;
+  }
+  .menu-hamburguesa.active div:nth-child(3) {
+    transform: rotate(-45deg) translate(6px, -6px);
+  }
+
+  /* ⬇️ Este bloque va dentro del media query */
+  .header-nav ul {
+    display: flex;
+    flex-direction: column; /* vertical SOLO en móvil */
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .header-nav ul li {
+    width: 100%;
+  }
+
+  .header-nav ul li a {
+    display: block;
+    width: 100%;
+    padding: 14px 20px;
+    border-bottom: 1px solid rgba(255,255,255,0.15);
+    border-radius: 0;
+    color: #E0E1DD;
+  }
+  .header-nav ul li a:hover {
+    background: rgba(233, 156, 156, 0.15);
+    color: #69001F;
+  }
+}

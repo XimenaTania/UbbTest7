@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentos CODE</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background-color: #f5f7fa;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #333;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .item {
+            background: white;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+            display: flex;
+            flex-direction: column;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.12);
+        }
+
+        .item img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+
+        .title {
+            font-size: 16px;
+            font-weight: bold;
+            padding: 15px;
+            flex: 1;
+            color: #444;
+        }
+
+        .button {
+            display: block;
+            background: linear-gradient(135deg, #007BFF, #0056b3);
+            color: white;
+            padding: 12px;
+            text-align: center;
+            text-decoration: none;
+            font-weight: bold;
+            border-top: 1px solid rgba(255,255,255,0.2);
+            transition: background 0.3s ease;
+        }
+
+        .button:hover {
+            background: linear-gradient(135deg, #0056b3, #003f88);
+        }
+
+    </style>
+</head>
+<body>
+ <h1>Documentos CODE</h1>
+
+    <div class="container">
+        <div class="item">
+            <img src="/mgeIEBLA/UBB.jpg" alt="Imagen 1">
+            <div class="title">Reglamento CODE</div>
+            <a href="manual1.pdf" class="button" download>📄 Descargar</a>
+        </div>
+
+        <div class="item">
+            <img src="/mgeIEBLA/UBB.jpg" alt="Imagen 2">
+            <div class="title">Guía de Procedimientos</div>
+            <a href="manual2.pdf" class="button" download>📄 Descargar</a>
+        </div>
+
+        <div class="item">
+            <img src="/mgeIEBLA/UBB.jpg" alt="Imagen 3">
+            <div class="title">Manual de Operaciones</div>
+            <a href="manual3.pdf" class="button" download>📄 Descargar</a>
+        </div>
+
+        <div class="item">
+            <img src="/mgeIEBLA/UBB.jpg" alt="Imagen 4">
+            <div class="title">Instructivo General</div>
+            <a href="manual4.pdf" class="button" download>📄 Descargar</a>
+        </div>
+
+        <div class="item">
+            <img src="/mgeIEBLA/UBB.jpg" alt="Imagen 5">
+            <div class="title">Normativa Interna</div>
+            <a href="manual5.pdf" class="button" download>📄 Descargar</a>
+        </div>
+
+        <div class="item">
+            <img src="/mgeIEBLA/UBB.jpg" alt="Imagen 6">
+            <div class="title">Políticas de Seguridad</div>
+            <a href="manual6.pdf" class="button" download>📄 Descargar</a>
+        </div>
+
+        <div class="item">
+            <img src="/mgeIEBLA/UBB.jpg" alt="Imagen 7">
+            <div class="title">Reglamento Interno</div>
+            <a href="manual7.pdf" class="button" download>📄 Descargar</a>
+        </div>
+
+        <div class="item">
+            <img src="/mgeIEBLA/UBB.jpg" alt="Imagen 8">
+            <div class="title">Guía de Usuario</div>
+            <a href="manual8.pdf" class="button" download>📄 Descargar</a>
+        </div>
+
+        <div class="item">
+            <img src="/mgeIEBLA/UBB.jpg" alt="Imagen 9">
+            <div class="title">Formato de Solicitud</div>
+            <a href="manual9.pdf" class="button" download>📄 Descargar</a>
+        </div>
+    </div>
+
+   
+</body>
+</html>

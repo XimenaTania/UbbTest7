@@ -1,0 +1,35 @@
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.content {
+    flex: 1;
+}
+
+.footer {
+    background: linear-gradient(135deg, #5199AD, #005567);
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.footer a {
+    color: #f1f1f1;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+    .footer {
+        font-size: 14px;
+        padding: 0.5rem 0;
+    }
+}
